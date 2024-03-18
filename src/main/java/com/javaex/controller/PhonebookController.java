@@ -38,7 +38,7 @@ public class PhonebookController {
 	public String write(@ModelAttribute PersonVo personVo) {
 		int count = phonebookService.exeWrite(personVo);
 		System.out.println(count);
-		return "";
+		return "redirect:/list";
 	}
 
 	// 삭제
